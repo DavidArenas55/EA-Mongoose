@@ -49,5 +49,11 @@ tsc
 
 Ejecutar JS
 ```
-node dist/mongoogse.js
+node dist/mongoose.js
 ```
+
+Referencias:
+- https://www.youtube.com/watch?v=lWMemPN9t6Q&t=7s
+- https://www.youtube.com/watch?v=gfP3aqV38q4
+- ChatGPT
+- Copilot dentro de visual studio code
