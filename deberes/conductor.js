@@ -1,12 +1,12 @@
-// conductor.js
-import mongoose from 'mongoose';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.conductorModel = void 0;
+var mongoose_1 = require("mongoose");
 // Definir el esquema de un conductor
-const conductorSchema = new mongoose.Schema({
+var conductorSchema = new mongoose_1.default.Schema({
     nombre: { type: String, required: true },
     edad: { type: Number, required: true },
-    coches: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Coche' }]  // Enlace a la colección Coche
+    coches: [{ type: mongoose_1.default.Schema.Types.ObjectId, ref: 'Coche' }] // Enlace a la colección Coche
 });
-
 // Crear el modelo de conductor basado en el esquema
-export const conductorModel = mongoose.model('Conductor', conductorSchema);
+exports.conductorModel = mongoose_1.default.model('Conductor', conductorSchema);
